@@ -14,6 +14,7 @@ export default class Demo extends APage<IProps, DemoModel> {
         this.handleStop();
         this.timer = setInterval(()=>{
             this.model.setNum(this.model.num + 1);
+            // this.model.num = this.model.num + 1;
         }, 0);
     }
     private handleStop = () => {
